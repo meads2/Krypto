@@ -3,14 +3,14 @@ from requests.auth import AuthBase
 from tabulate import tabulate
     
 class Holdings():
-    api_url = 'https://api.gdax.com/'
 
-    def __init__(self, product='BTC', auth):
+    def __init__(self, auth, product='BTC'):
         self.product = product
-        self.auth = auth 
+        self.auth = auth
+        self.api_url = 'https://api.gdax.com/'
 
     def getAccounts(self, outputres=False):
-        r = requests.get(api_url + 'accounts', auth=auth)
+        r = requests.get(self.api_url + 'accounts', auth=self.auth)
         r = r.json()
 
         # Empty array for accounts
@@ -29,7 +29,7 @@ class Holdings():
         '''
         Returns the total balance in US dollars for an account
         '''
-        r = requests.get(api_url + 'accounts', auth=auth)
+        r = requests.get(self.api_url + 'accounts', auth=self.auth)
         r = r.json()
 
         if self.product == 'BTC':
@@ -46,7 +46,7 @@ class Holdings():
             return ltc
         
     def allHoldings(self):
-        r = requests.get(api_url + 'accounts', auth=auth)
+        r = requests.get(self.api_url + 'accounts', auth=self.auth)
         r = r.json()
         btc = str(round(float(r[1]['balance']),4))
         eth = str(round(float(r[2]['balance']),4))

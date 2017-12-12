@@ -1,4 +1,9 @@
 # Krypto
+> The Crypto Wrapper we've been mining for. - No One Ever
+
+[![Python](https://img.shields.io/badge/Python-3.0-green.svg)
+[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg)]()
+
 
 A lightweight and simple wrapper for the [GDAX](https://www.gdax.com) crypto API, with some useful utilities to calculate the following:
     - Crypto Net Worth
@@ -39,7 +44,13 @@ auth = CoinbaseExchangeAuth(API_KEY, API_SECRET, API_PASS)
 
 # Create Worth Instance
 worth = Worth()
+# Returns the following:
+# [{'key': u'The Key's Value'},{'key2': u'Key 2s value'}]  
+
 
 ```
+
+
+
 
 
