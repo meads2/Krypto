@@ -1,8 +1,8 @@
 # Krypto
 > The Crypto Wrapper we've been mining for. - No One Ever
 
-[![Python](https://img.shields.io/badge/Python-3.0-green.svg)
-[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg)]()
+[Python](https://img.shields.io/badge/Python-3.0-green.svg)
+[![Github All Releases](https://img.shields.io/github/downloads/krypto/krypto/total.svg)]()
 
 
 A lightweight and simple wrapper for the [GDAX](https://www.gdax.com) crypto API, with some useful utilities to calculate the following:
