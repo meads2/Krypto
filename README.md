@@ -17,7 +17,8 @@ A lightweight and simple wrapper for the [GDAX](https://www.gdax.com) crypto API
     - Total Invested Amount
     - Total Earnings +/-
 
-###Future Requests
+### Future Requests
+
     - turn this into a full application with DB, Auth, Mail, etc...
     - Build a react front end 
     - REST API from app
@@ -27,13 +28,19 @@ A lightweight and simple wrapper for the [GDAX](https://www.gdax.com) crypto API
 Getting started is simple head on over to GDAX[]
 
 ```bash
-    git clone this_repository && ch this repository
-
+    # Clone Repository & Install Dependencies
+    git clone https://github.com/meads2/Krypto && cd krypto
+    pip install setup.py
+    
+    # Set Keys on Mac/Linux READ only
+    # We don't steal your credentials
     export GDAX_API_KEY=your_long_key_goes_here
     export GDAX_API_SECRET=your_API_secret
     export GDAX_API_PASS=your_API_pass
-
+    
+    # Run Python Example
     python example.py
+    # ... your net worth is $XXX,XXX,XXX.xx
 
 ```
 
